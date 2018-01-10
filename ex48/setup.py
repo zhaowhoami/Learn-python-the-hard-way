@@ -11,9 +11,9 @@ config = {
     'author_email': 'xauatxg@126.com',
     'version': '0.1',
     'install_requires': ['nose'],
-    'packages': ['ex47'],
+    'packages': ['lexicon'],
     'scripts': [],
-    'name': 'ex47'
+    'name': 'lexicon'
 }
 
 setup(**config)
