@@ -1,9 +1,9 @@
 # _*_ coding:utf-8 _*_
 
 directions = ['north', 'south', 'east', 'west', 'down', 'up', 'left', 'right', 'back']
-verbs = ['go', 'stop', 'kill', 'eat']
-stops = ['the', 'in', 'of', 'from', 'at', 'it']
-nouns = ['door', 'bear', 'princess', 'cabinet']
+verbs = ['go', 'stop', 'kill', 'eat', 'open']
+stops = ['the', 'in', 'of', 'from', 'at', 'it', 'to', 'on']
+nouns = ['door', 'bear', 'princess', 'cabinet', 'you']
 
 def convert_number(word):
     try:
