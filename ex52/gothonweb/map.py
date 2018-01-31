@@ -1,3 +1,5 @@
+import random
+
 class Room(object):
 
     def __init__(self, name, description):
@@ -107,7 +109,12 @@ escape_pod.add_paths({
     '*': the_end_loser
 })
 
-generic_death = Room("death", "You died.")
+generic_death = Room("death", random.choice([
+                "You died. You kinda suck at this.",
+                "Your mom would be proud...if she were smater.",
+                "Such a luser.",
+                "I have a small puppy that's better at this."
+                ]) )
 
 the_bridge.add_paths({
     'throw the bomb': generic_death,

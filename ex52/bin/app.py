@@ -17,7 +17,7 @@ if web.config.get('_session') is None:
 else:
     session = web.config._session
 
-    render = web.template.render('templates/', base="layout")
+render = web.template.render('templates/', base="layout")
 
 
 class Index(object):
@@ -42,6 +42,8 @@ class GameEngine(object):
         # there is a bug here, can you fix it?
         if session.room and form.action:
             session.room = session.room.go(form.action)
+        else:
+            return render.you_died()
 
         web.seeother("/game")
 
